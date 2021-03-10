@@ -70,7 +70,10 @@
 				}
 			}
 			if (check == 0) {
-				listyItems[0].remove();
+				var removeItem = getRandomIntInclusive(0, 9);
+				console.log(removeItem);
+
+				listyItems[removeItem].remove();
 				console.log("We get rid of the " + removeItem + " item.");
 			}
 
@@ -78,6 +81,12 @@
 
 		document.getElementById('target').appendChild(element)
 
+	}
+
+	function getRandomIntInclusive(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 	}
 
 	
