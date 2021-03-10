@@ -6,12 +6,12 @@
     .flex-container {
 			display: flex;
 			flex-direction: row;
-			background-color: red;
+			background-color: rgb(199, 139, 70);
 		}
 
 		.flex-container>div {
 			/*div children of the flex container*/
-			background-color: #f1f1f1;
+			background-color: #cdcebf;
 			margin: 10px;
 			padding: 20px;
 			font-size: 30px;
@@ -21,7 +21,7 @@
 		@media (max-width: 600px) {
 			.flex-container {
 				flex-direction: column;
-				background-color: green;
+				background-color: rgb(188, 199, 30);
 			}
 		}
 	</style>
@@ -36,9 +36,9 @@
 	<input id="inpList" type="text"></input>
 
 	<div class="flex-container" id="target">
-		<div class="listy">item 1</div>
-		<div class="listy">item 2</div>
-		<div class="listy">item 3</div>
+		<div class="listy">Item 1</div>
+		<div class="listy">Item 2</div>
+		<div class="listy">Item 3</div>
 	</div>
 
 	<p> Press the button to create an new element of type div and then add it to the container.

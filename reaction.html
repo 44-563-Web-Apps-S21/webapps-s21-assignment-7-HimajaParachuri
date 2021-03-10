@@ -15,10 +15,7 @@
   <p id="target">Your time</p>
     <p id="countdown">Count</p>
 
-  <button type="button"
-  class="btn btn-primary"
-  onclick="startTime()">
-  Start Timer </button>
+  <button type="button" class="btn btn-primary" onclick="startTime()"> Start Timer </button>
   
   <button id="react" class="btn btn-primary" onclick="recordReact()"> React Now </button>
   
@@ -44,7 +41,7 @@
 
         setTimeout(function (i) {
           document.getElementById("countdown").innerHTML = i
-        }, (((3 - 1) - i) * 1000), i);
+        }, (((countdown - 1) - i) * 1000), i);
 
       }
 
@@ -62,7 +59,7 @@
           document.getElementById("react").classList.add("btn-primary");
           document.getElementById("react").classList.remove("btn-success");
         }
-      }, (3 - 1)*1000)
+      }, (countdown - 1)*1000)
     }
   </script>
 
